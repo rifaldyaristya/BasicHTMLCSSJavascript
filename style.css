@@ -1,0 +1,412 @@
+html{
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+div[class="menu"]{
+  z-index: 1;
+}
+
+div[class="menu"] img, div[class="menu"] a{
+  height: auto;
+  position: fixed;
+  border-radius:100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.75);
+}
+
+#profilePicture{
+  max-width: 10vw;
+  bottom: 0;
+  right:0;
+}
+
+#education{
+  max-width: 5vw;
+  bottom: 8vw;
+  right:0;
+}
+#hobbies{
+  max-width: 5vw;
+  bottom: 7vw;
+  right:7.5vw;
+}
+
+#biodata{
+  max-width: 5vw;
+  bottom: 1vw;
+  right:12vw;
+}
+
+#banner{
+  background-color: pink;
+  background-image: url("assets/sakura.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vw;
+  font-size: 10px;
+  text-transform: uppercase;
+  /* color: hsl(0, 0%, 90%); */
+}
+
+#banner h1{
+  font-size: 4.5em;
+  position: absolute;
+  padding-top: 2.5em;
+  left: 4.5em;
+  margin: 0;
+  max-width: 10.5vw;
+  height: 14em;
+  background-color: pink;
+}
+
+#banner h4, #banner h5{
+  font-size:1.5em;
+  transform: rotate(-90deg);
+  width:20.5em;
+  position: absolute;
+}
+
+#banner h4{
+  top:10.5em;
+  left:-3.5em;
+}
+
+#banner h5{
+  top:3em;
+  left: -1.5em;
+}
+
+@media (max-width: 70em){
+  #banner h1{
+    opacity: 0.5;
+    background-color: white;
+    max-width: 85vw;
+    height: 6vw;
+    font-size: 5vw;
+    left: 10vw;
+    right: 10vw;
+    top: 10vw;
+    bottom: 40vw;
+    padding : 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #banner h4, #banner h5{
+    font-size:1.5em;
+    transform: rotate(0deg);
+    width:20.5em;
+    position: absolute;
+  }
+
+  #banner h4{
+    top:15vw;
+    left:32vw;
+    right:32vw
+  }
+  
+  #banner h5{
+    top:16vw;
+    left: 45vw;
+    right: 45vw;
+  }
+
+}
+
+@media (max-width: 35em){
+  #banner h1{
+    opacity: 0.5;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  #banner h4, #banner h5{
+    left: 25vw;
+    font-size:0.75em;
+  }
+
+  #banner h4{
+    top:17vw;
+  }
+
+  #banner h5{
+    top:19vw;
+  }
+
+}
+
+#profilePictureBiodata{
+  width:50%;
+  height: auto;
+}
+
+#firstSection, #secondSection, #thirdSection{
+  padding: 18vw 10vw;
+}
+
+#firstSection{
+  height:40vw;
+  background-color: rgba(197, 163, 255);
+}
+
+#firstSection h1{
+  text-transform: uppercase;
+}
+
+#firstSection > h1{
+  font-size: 
+  padding-left: 9vw;
+  margin-bottom: 5vw;
+  position: relative;
+  z-index:1;
+}
+
+#firstSection table, #firstSection th, #firstSection td {
+  padding: 0.5vw;
+  border-collapse: collapse;
+}
+
+#firstSection tr:hover{
+  background-color: rgb(204, 255, 255);
+}
+
+#firstSection article{
+  background-color: rgb(0,191,255);
+  position: absolute;
+  right: 17vw;
+  top:30vw;
+  padding:15vw 0;
+  line-height: 5vw;
+  text-align: center;
+  height: 46vw;
+}
+
+@media (max-width: 70em){
+  #firstSection{
+    padding: 20vw 0;
+    text-align: center;
+    height: 120vw;
+  }
+
+  #firstSection > h1{
+    margin:0;
+    /* padding:vw; */
+    padding-left: 10vw;
+    margin-bottom: 10vw;
+  }
+
+  #firstSection h1{
+    padding-left: 0vw;
+    font-size: 3vw;
+  }
+
+  table{
+    padding:0;
+    margin: 0;
+  }
+
+  #profilePictureBiodata{
+    width : 40%;
+
+  }
+
+  #firstSection article{
+    text-align: left;
+    background-color: transparent;
+    position: static;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    padding-left: 20vw;
+  }
+
+  #firstSection table{
+    border-collapse: collapse;
+  }
+
+  #firstSection td, #firstSection th{
+    border: 1px solid rgb(204, 221, 255);
+    padding: 2vw;
+  }
+  #firstSection tr:nth-child(even){
+    background-color: rgb(204, 221, 255);
+  }
+
+  #firstSection tr:nth-child(even):hover{
+    background-color: rgb(204, 255, 255);
+  }
+
+  #firstSection article h1{
+    margin-top:15vw;
+    padding-left: 18vw;
+  }
+
+}
+
+#secondSection{
+  height:100vw;
+  background-color: rgba(175, 248, 219);
+  text-align: center;
+}
+
+#secondSection > h1{
+  text-transform: uppercase;
+  margin: 10vw 0;
+}
+
+#secondSection .flex-container, #secondSection .flex-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#secondSection .flex-container img{
+  width: 200px;
+  height:auto;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#secondSection .dropdown{
+  flex: 50%;
+}
+
+#secondSection .flex-container .dropdown-context{
+  padding: 2% 0;
+  font-size: 20px;
+  background-color: rgb(204, 221, 255);
+}
+
+.dropdown-context{
+  display:none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .dropdown-context{
+  display:block;
+}
+
+@media(max-width: 60em){
+  #secondSection > h1{
+    font-size: 5vw;
+  }
+
+  #secondSection{
+    height: 150vw;
+  }
+}
+
+@media (max-width: 40em){
+  #secondSection{
+    height: 390vw;
+  }
+}
+
+.col-4 {width: 33.33%;}
+.col-8 {
+  width: 66.66%;
+  height: 25vw;
+  background-color: rgba(231, 255, 172);
+}
+
+[class*="col-"]{
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+
+#thirdSection{
+  background-color: rgba(255, 255, 209);
+  height:75vw;
+}
+
+#thirdSection > h1{
+  text-transform: uppercase;
+  margin: 10vw 0;
+  text-align: center;
+}
+
+#thirdSection ul{
+  list-style-type: none;
+  line-height: 5vw;
+}
+
+#thirdSection li{
+  background-color: antiquewhite;
+  text-align:center;
+}
+
+#tkInfo{
+  display: block;
+}
+
+.sekolahInfo{
+  text-align: center;
+  display: none;
+}
+
+
+#thirdSection .active{
+  background-color:rgba(231, 255, 172);
+}
+
+
+@media (max-width: 60em){
+  #thirdSection{
+    height: 120vw;
+  }
+  
+  .col-8{
+    height: 70vw;
+  }
+}
+
+@media (max-width: 40em){
+
+  #thirdSection > h1{
+    font-size: 5vw;
+  }
+
+  #thirdSection{
+    height: 230vw;
+  }
+
+  [class*="col-"]{
+    padding:0;
+    margin:0;
+  }
+  #thirdSection ul{
+    padding:0;
+    margin-bottom: 7vw;
+  }
+  .col-4{
+    width: 100%;
+  }
+  .col-8{
+    width: 100%;
+    height: 120vw;
+  }
+}
+
+#footer{
+  padding: 10vw;
+  background-image: url("assets/water.jpg");
+  background-size: cover;
+  padding-top: 5vw;
+  text-align: center;
+  height: 7vw;
+
+}
+
+@media (max-width: 50em){
+  #footer{
+    height: 20vw;
+  }
+}
+

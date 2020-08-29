@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="First WBD Assignments about Web Basic">
+  <meta name="keywords" content="Web Basic, WBD, HTML, CSS, JavaScript">
+  <meta name="author" content="Rifaldy Aristya Kelana">
+  <title>Rifaldy Aristya Kelana's Profile Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <div class="menu">
+    <img id="profilePicture" src="assets/profilePictureCropped.JPG" onclick=hideSubMenu() alt="My Profile Picture">
+    <a href="#firstSection" class="submenu"><img id="biodata" src="assets/biodata.jpg" alt="Biodata"></a>
+    <a href="#secondSection" class="submenu"><img id="hobbies" src="assets/hobby.jpg" alt="Hobbies"></a>
+    <a href="#thirdSection" class="submenu"><img id="education" src="assets/education.png" alt="Education"></a>
+  </div>
+  <section id="banner">
+    <header>
+      <h1>Welcome To My World</h1>
+      <h4>Posted by : Rifaldy Aristya Kelana</h4>
+      <h5>13518082</h5>
+    </header>
+  </section>
+  
+  <section id="firstSection">
+    <h1>Information about me</h1>
+    <img src="assets/profilePicture.JPG" id="profilePictureBiodata">
+    <article>
+      <h1>My Biodata</h1>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Rifaldy Aristya Kelana</th>
+        </tr>
+        <tr>
+          <th>Date of Birth</th>
+          <th>23th February 2000</th>
+        </tr>
+        <tr>
+          <th>Job</th>
+          <th>Student</th>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <th>13518082@std.stei.itb.ac.id</th>
+        </tr>
+        <tr>
+          <th>Line</th>
+          <th>rifaldyak</th>
+        </tr>
+      </table>
+    </article>
+  </section>
+
+  <section id="secondSection">
+      <h1>My Favourite Things</h1>
+      <div class="flex-container">
+        <div class="dropdown">
+          <img src="assets/rendang.jpg">
+          <div class="dropdown-context">
+            <p>Rendang enak karena gurih dan pedas</p>
+            <p>Gurih karena pakai santan</p>
+            <p>Pedas karena pakai cabai</p>
+            <p>Aku jatuh cinta pada rendang sejak pertama mencoba.</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <img src="assets/lotek.jpg">
+          <div class="dropdown-context">
+            <p>Lotek enak dan sehat</p>
+            <p>Enak karena bumbu kacangnya</p>
+            <p>Sehat karena dia sayuran</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <img src="assets/lasagna.jpg">
+          <div class="dropdown-context">
+            <p>Lasagna makanan yang aku baru coba beberapa bulan lalu</p>
+            <p>Enak karena ada lapisan-lapisannya</p>
+            <p>Saos tomat dan kejunya juga paduannya pas</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <img src="assets/swimming.jpg">
+          <div class="dropdown-context">
+            <p>Berenang pertama kulakukan bersama keluarga.</p>
+            <p>Lalu aku dimasukkan ke klub renang karena Asma.</p>
+            <p>Sejak saat itu, aku menyukai berenang</p>
+          </div>
+        </div>
+        <div class="dropdown">
+          <img src="assets/spongebob.jpg">
+          <div class="dropdown-context">
+            <p>Kartun adalah salah satu hal yang kusukai.</p>
+            <p>Salah satunya Spongebob.</p>
+            <p>Spongebob lucu dan konyol.</p>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <section id="thirdSection">
+    <h1>Education</h1>
+    <div class="col-4 ">
+      <ul>
+        <li class="sekolahMenu active" onclick="showSchoolInfo(1)" id="tkMenu">Taman Kanak-Kanak</li>
+        <li class="sekolahMenu" onclick="showSchoolInfo(2)" id="sdMenu">Sekolah Dasar</li>
+        <li class="sekolahMenu" onclick="showSchoolInfo(3)" id="smpMenu">Sekolah Menengah Pertama</li>
+        <li class="sekolahMenu" onclick="showSchoolInfo(4)" id="smaMenu">Sekolah Menengah Atas</li>
+        <li class="sekolahMenu" onclick="showSchoolInfo(5)" id="universitasMenu">Universitas</li>
+      </ul>
+    </div>
+
+    <div class="col-8">
+      <div class="sekolahInfo" id="tkInfo">
+        <p>Aku bersekolah di Taman Kanak-Kanak Permata Balita</p>
+        <p>TK Permata Balita adalah suatu sekolah yang berada di Jl. Taman Kopo Indah I Blk. H No.90, Margahayu Sel., Kec. Margahayu, Bandung, Jawa Barat 40226</p>
+        <p>Hal yang aku ingat dari sekolah ini adalah</p>
+        <p>Sekolah ini mengajarkan nilai-nilai kedisiplinan dan akademik yang lumayan untuk ukuran Taman Kanak-Kanak</p>
+        <p>Aku disekolahkan disini karena saudara-saudara ku yang lebih tua dariku disekolahkan disini</p>
+        <p>Selain itu, TK ini lumayan terkenal di lingkungan tempat tinggalku</p>
+        <p><a href="https://www.facebook.com/pages/TK-Permata-Balita/131864406868846?hc_ref=ARRn1_0V2MN7ne9GsljVoXp9RaZsVILvWS4MH8JnOOPL_vltKD3s4R-j8T9tbg5TsPc&ref=nf_target&fref=tag" target="_blank">Ini</a> adalah akun Facebook sekolah ini </p>
+      </div>
+
+      <div class="sekolahInfo" id="sdInfo">
+        <p>Aku bersekolah di Sekolah Dasar Permata Harapan</p>
+        <p>SD Permata Harapan beralamat di Taman Kopo Indah II A4 No. 1-2, Margahayu Selatan, Kec. Margahayu, Kab. Bandung Prov. Jawa Barat</p>
+        <p>SD ini satu yayasan dengan TK saya</p>
+        <p>Sehingga selain mengajari kedisiplinan yang tinggi, SD ini juga sangat perhatian tentang urusan akademis</p>
+        <p>Tidak hanya akademis, di SD ini saya belajar berorganisasi, seperti wajib mengikuti kegiatan Pramuka</p>
+        <p>Saat di SD ini juga, saya ingat bahwa karyawisatanya sederhana namun asik.</p>
+        <p><a href="https://dapo.dikdasmen.kemdikbud.go.id/sekolah/3F083872A1182C3366B4" target="_blank">Ini</a> adalah info sekolah ini lebih lanjut</p>
+      </div>
+
+      <div class="sekolahInfo" id="smpInfo">
+        <p>Saat saya SMP, saya mencoba sekolah yang jauh dari rumah saya.</p>
+        <p>Saya bersekolah di SMPK 1 BPK Penabur Bandung.</p>
+        <p>Disini, saya belajar dan juga melanjutkan kegiatan Pramuka yang adalah wajib di sekolah ini.</p>
+        <p>Selain itu, saya belajar memainkan Gamelan secara dasar.</p>
+        <p><a href="https://www.facebook.com/pages/TK-Permata-Balita/131864406868846?hc_ref=ARRn1_0V2MN7ne9GsljVoXp9RaZsVILvWS4MH8JnOOPL_vltKD3s4R-j8T9tbg5TsPc&ref=nf_target&fref=tag" target="_blank">Ini</a> adalah akun Instagram sekolah ini </p>
+      </div>
+
+      <div class="sekolahInfo" id="smaInfo">
+        <p>Saya melanjutkan SMA saya di SMAK 1 BPK Penabur Bandung</p>
+        <p>Disini saya mengambil jurusan IPA.</p>
+        <p>Bersekolah disini sangat menyenangkan.</p>
+        <p><a href="https://www.instagram.com/osiseklesiasmak1/?hl=en" target="_blank">Ini</a> adalah akun Instagram sekolah ini </p>
+      </div>
+
+      <div class="sekolahInfo" id="universitasInfo">
+        <p>Dan sekarang saya lagi kuliah.</p>
+        <p>Saya berkuliah di Institut Teknologi Bandung</p>
+        <p>Saya mengambil jurusan Teknik Informatika</p>
+        <p>Kuliah di tempat ini sangat menyenangkan.</p>
+        <p><a href="https://twitter.com/itbofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Ini</a> adalah akun Twitter kampus ini </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer">
+    <p>"Kadang kita harus melihat jauh ke dalam diri kita untuk menyelesaikan masalah" - Patrick Star</p>
+    <p>-2020-</p>
+  </section>
+</body>
+</html>
