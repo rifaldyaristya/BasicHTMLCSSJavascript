@@ -13,9 +13,9 @@
 <body>
   <div class="menu">
     <img id="profilePicture" src="assets/profilePictureCropped.JPG" onclick=hideSubMenu() alt="My Profile Picture">
-    <a href="#firstSection" class="submenu"><img id="biodata" src="assets/biodata.jpg" alt="Biodata"></a>
-    <a href="#secondSection" class="submenu"><img id="hobbies" src="assets/hobby.jpg" alt="Hobbies"></a>
-    <a href="#thirdSection" class="submenu"><img id="education" src="assets/education.png" alt="Education"></a>
+    <img id="biodata" class="submenu" onclick="showSubmenu(1)" src="assets/biodataActive.jpg" alt="Biodata">
+    <img id="hobbies" class="submenu" onclick="showSubmenu(2)" src="assets/hobby.jpg" alt="Hobbies">
+    <img id="education" class="submenu" onclick="showSubmenu(3)" src="assets/education.png" alt="Education">
   </div>
   <section id="banner">
     <header>
@@ -26,7 +26,6 @@
   </section>
   
   <section id="firstSection">
-    <h1>Information about me</h1>
     <img src="assets/profilePicture.JPG" id="profilePictureBiodata">
     <article>
       <h1>My Biodata</h1>
@@ -59,45 +58,34 @@
       <h1>My Favourite Things</h1>
       <div class="flex-container">
         <div class="dropdown">
+          <div class="dropdown-context">
+            Rendang
+          </div>
           <img src="assets/rendang.jpg">
-          <div class="dropdown-context">
-            <p>Rendang enak karena gurih dan pedas</p>
-            <p>Gurih karena pakai santan</p>
-            <p>Pedas karena pakai cabai</p>
-            <p>Aku jatuh cinta pada rendang sejak pertama mencoba.</p>
-          </div>
         </div>
         <div class="dropdown">
+          <div class="dropdown-context">
+            Lotek
+          </div>
           <img src="assets/lotek.jpg">
-          <div class="dropdown-context">
-            <p>Lotek enak dan sehat</p>
-            <p>Enak karena bumbu kacangnya</p>
-            <p>Sehat karena dia sayuran</p>
-          </div>
         </div>
         <div class="dropdown">
+          <div class="dropdown-context">
+            Lasagna
+          </div>
           <img src="assets/lasagna.jpg">
-          <div class="dropdown-context">
-            <p>Lasagna makanan yang aku baru coba beberapa bulan lalu</p>
-            <p>Enak karena ada lapisan-lapisannya</p>
-            <p>Saos tomat dan kejunya juga paduannya pas</p>
-          </div>
         </div>
         <div class="dropdown">
+          <div class="dropdown-context">
+            Berenang
+          </div>
           <img src="assets/swimming.jpg">
-          <div class="dropdown-context">
-            <p>Berenang pertama kulakukan bersama keluarga.</p>
-            <p>Lalu aku dimasukkan ke klub renang karena Asma.</p>
-            <p>Sejak saat itu, aku menyukai berenang</p>
-          </div>
         </div>
         <div class="dropdown">
-          <img src="assets/spongebob.jpg">
           <div class="dropdown-context">
-            <p>Kartun adalah salah satu hal yang kusukai.</p>
-            <p>Salah satunya Spongebob.</p>
-            <p>Spongebob lucu dan konyol.</p>
+            Kartun
           </div>
+          <img src="assets/spongebob.png">
         </div>
       </div>
 
@@ -159,11 +147,6 @@
         <p><a href="https://twitter.com/itbofficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">Ini</a> adalah akun Twitter kampus ini </p>
       </div>
     </div>
-  </section>
-
-  <section id="footer">
-    <p>"Kadang kita harus melihat jauh ke dalam diri kita untuk menyelesaikan masalah" - Patrick Star</p>
-    <p>-2020-</p>
   </section>
 </body>
 </html>

@@ -51,6 +51,34 @@ function showSchoolInfo(schoolCode){
 
 }
 
+function showSubmenu(menuCode){
+  let sections = document.querySelectorAll('section[id*="Section"]');
+
+  for(let i=0; i<sections.length; i++){
+    sections[i].style.display = "none";
+  }
+
+  switch(menuCode){
+    case 1:
+      document.getElementById("firstSection").style.display = "block";
+      document.getElementById("biodata").src="assets/biodataActive.jpg";
+      document.getElementById("hobbies").src="assets/hobby.jpg";
+      document.getElementById("education").src="assets/education.png";
+      break;
+    case 2:
+      document.getElementById("secondSection").style.display = "block";
+      document.getElementById("biodata").src="assets/biodata.jpg";
+      document.getElementById("hobbies").src="assets/hobbyActive.jpg";
+      document.getElementById("education").src="assets/education.png";
+      break;
+    case 3:
+      document.getElementById("thirdSection").style.display = "block";
+      document.getElementById("biodata").src="assets/biodata.jpg";
+      document.getElementById("hobbies").src="assets/hobby.jpg";
+      document.getElementById("education").src="assets/educationActive.jpg";
+      break;
+  }
+}
 
 
 
